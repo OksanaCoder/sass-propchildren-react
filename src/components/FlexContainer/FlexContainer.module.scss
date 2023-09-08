@@ -1,5 +1,25 @@
 $bgRed : red;
+$orangeBg: orange;
+$greenBg: green;
+$pinkBg: pink;
 
 .bgRed { 
     background-color: $bgRed ;
+}
+.flexContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redBtn {
+    background-color: $bgRed ;
+}
+.orangeBtn {
+    background-color: orange;;
+}
+.greenBtn {
+    background-color: $greenBg ;
+}
+.pinkBtn {
+    background-color: $pinkBg;
 }

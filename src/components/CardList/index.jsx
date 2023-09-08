@@ -1,26 +1,15 @@
 import React from "react";
 import FlexContainer from "../FlexContainer";
-import styles from "./CardList.module.scss";
+import styles from "../FlexContainer/FlexContainer.module.scss";
 
 const CardList = () => {
   return (
-    <div className={styles.centering}>
-      <FlexContainer title="First Title for List">
-        <p>first</p>
-        <p>second</p>
-        <p>third</p>
-        <p>fourth</p>
-      </FlexContainer>
-      <FlexContainer title="Second Title for buttons">
-        <button>1</button>
-
-        <button>2</button>
-
-        <button>3</button>
-
-        <button>4</button>
-      </FlexContainer>
-    </div>
+    <FlexContainer styleProp={styles.flexContainer}>
+      <button className={styles.redBtn}>first</button>
+      <button className={styles.greenBtn}>second</button>
+      <button className={styles.pinkBtn}>third</button>
+      <button className={styles.oargeBtn}>fourth</button>
+    </FlexContainer>
   );
 };
 
